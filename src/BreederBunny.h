@@ -10,6 +10,7 @@
 #include "ModelStores.h"
 #include "ModelFacilities.h"
 #include "Inseminator.h"
+#include "BabyBunny.h"
 
 class BreederBunny : public Process {
     protected:

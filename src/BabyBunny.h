@@ -5,6 +5,7 @@
 #include "ModelParameters.h"
 #include "ModelStores.h"
 #include "ModelFacilities.h"
+#include "NewBreederBunny.h"
 
 class BabyBunny : public Process {
     protected:

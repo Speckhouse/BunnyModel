@@ -7,17 +7,26 @@
 
 #include "simlib.h"
 #include "ModelParameters.h"
-#include "ModelStores.cpp"
+#include "ModelStores.h"
 #include "ModelFacilities.h"
 #include "BreederBunny.h"
 
-class InitEvent : Event {
+class InitBunnyRequest : public Process {
+protected:
+    ModelStores &mSto;
+    const ModelParameters &mParams;
+public:
+    InitBunnyRequest(const ModelParameters &params,ModelStores &sto);
+    void Behavior();
+};
+
+class InitEvent : public Event {
 protected:
     const ModelParameters &mParams;
     ModelStores &mSto;
     ModelFacilities &mFac;
 public:
-    InitEvent(ModelParameters &params, ModelStores &sto, ModelFacilities &fac);
+    InitEvent(const ModelParameters &params, ModelStores &sto, ModelFacilities &fac);
     void Behavior();
 };
 

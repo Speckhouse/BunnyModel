@@ -1,5 +1,5 @@
 #ifndef IMS_NEWBREEDERBUNNY_H
-#define IMS_IMS_NEWBREEDERBUNNY_H
+#define IMS_NEWBREEDERBUNNY_H
 
 #include "simlib.h"
 #include "ModelParameters.h"
@@ -18,4 +18,4 @@ class NewBreederBunny : public Process {
 };
 
 
-#endif //IMS_IMS_NEWBREEDERBUNNY_H
+#endif //IMS_NEWBREEDERBUNNY_H

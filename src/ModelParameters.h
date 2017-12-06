@@ -2,8 +2,8 @@
 // Created by isa2015 on 6.12.17.
 //
 
-#ifndef IMS_ModelParameters_H
-#define IMS_ModelParameters_H
+#ifndef IMS_MODELPARAMETERS_H
+#define IMS_MODELPARAMETERS_H
 
 #include "simlib.h"
 
@@ -59,4 +59,4 @@ public:
 };
 
 
-#endif //IMS_ModelParameters_H
+#endif //IMS_MODELPARAMETERS_H

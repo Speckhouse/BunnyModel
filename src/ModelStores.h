@@ -2,8 +2,8 @@
 // Created by isa2015 on 6.12.17.
 //
 
-#ifndef IMS_STORES_H
-#define IMS_STORES_H
+#ifndef IMS_MODELSTORES_H
+#define IMS_MODELSTORES_H
 
 #include "simlib.h"
 #include "ModelParameters.h"
@@ -19,4 +19,4 @@ public:
 };
 
 
-#endif //IMS_STORES_H
+#endif //IMS_MODELSTORES_H

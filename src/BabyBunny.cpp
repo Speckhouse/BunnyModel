@@ -13,11 +13,10 @@ void BabyBunny::Behavior() {
     }
     //samec nebo samice
     if(Random() < mParams.getFemaleBirthChance()){
-        //Odber samic do chovu
-    }
-
-    if(Random() < mParams.getDieWhileAdolescenceChance()){
-        return;
+        if(!mSto.mBreederRequests.Empty()){
+            (new NewBreederBunny(mParams,mSto,mFac))->Activate();
+            return;
+        }
     }
 
     if(mFac.mOrderActive.Busy()){

@@ -3,7 +3,6 @@
 //
 
 #include "BreederBunny.h"
-#include "BabyBunny.h"
 
 BreederBunny::BreederBunny(const ModelParameters &params,ModelStores &sto, ModelFacilities &fac)
         : Process(), mParams(params), mSto(sto), mFac(fac){}
@@ -22,7 +21,7 @@ void BreederBunny::discard(){
         Wait(mParams.getBreederBunnyArrivalDelay());
         for (int i = 0;i<mParams.getBreederBunnyBuyAmount();i++) {
             Enter(mSto.mBreedersNotReady,1);
-            (new BreederBunny(mParams,mSto,mFac))->Activate;
+            (new BreederBunny(mParams,mSto,mFac))->Activate();
         }
     }
 }
