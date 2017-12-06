@@ -5,4 +5,7 @@
 #include "ModelStores.h"
 
 ModelStores::ModelStores(const ModelParameters &params) :
-        mBreedersNotReady(params.getBreederBunnyCap()) {}
+        mBreedersNotReady(params.getBreederBunnyTotalRequested()),
+        mBreederBunnyCap(params.getBreederBunnyCap()),
+        mBreederRequests(params.getBreederBunnyBuyTreshold())
+{}

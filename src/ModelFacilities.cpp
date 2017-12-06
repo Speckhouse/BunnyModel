@@ -6,7 +6,9 @@
 
 ModelFacilities::ModelFacilities() :
         mBreedGate("breedGate"),
-        mInseminatorService("inseminatorService")
+        mInseminatorService("inseminatorService"),
+        mOrderActive("orderActive"),
+        mOrderServed("orderServed")
 {
 
 }

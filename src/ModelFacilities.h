@@ -11,6 +11,8 @@ class ModelFacilities {
 public:
     Facility mBreedGate;
     Facility mInseminatorService;
+    Facility mOrderActive;
+    Facility mOrderServed;
     ModelFacilities();
 };
 

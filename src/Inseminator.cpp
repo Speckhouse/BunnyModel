@@ -11,7 +11,7 @@ Inseminator::Inseminator(const ModelParameters &params, ModelFacilities &fac) :
 
 void Inseminator::Behavior() {
     Wait(mParams.getInseminatorDelay());
-    Relese(mFac.mInseminatorService);
+    Release(mFac.mInseminatorService);
     Wait(mParams.getInseminatorStayTime());
     Seize(mFac.mInseminatorService);
 }

@@ -9,6 +9,7 @@
 #include "ModelParameters.h"
 #include "ModelStores.h"
 #include "ModelFacilities.h"
+#include "Inseminator.h"
 
 class BreederBunny : public Process {
     protected:
@@ -18,6 +19,8 @@ class BreederBunny : public Process {
         bool mGateCloser = false;
     public:
         BreederBunny(const ModelParameters &params, ModelStores &sto, ModelFacilities &Fac);
+        BreederBunny(bool isInitial,const ModelParameters &params, ModelStores &sto, ModelFacilities &Fac);
+        void discard();
         void Behavior();
 };
 

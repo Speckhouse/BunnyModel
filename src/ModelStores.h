@@ -11,6 +11,8 @@
 class ModelStores {
 public:
     Store mBreedersNotReady;
+    Store mBreederBunnyCap;
+    Store mBreederRequests;
 
     ModelStores(const ModelParameters &params);
 

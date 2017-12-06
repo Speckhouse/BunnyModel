@@ -36,7 +36,45 @@ unsigned int ModelParameters::getLitterSize() const {
     return mLitterSizeMin + (int)(Random() * (mLitterSizeMax-mLitterSizeMin));
 }
 
+unsigned int ModelParameters::getBreederBunnyInitialRequests() const {
+    return mBreederBunnyInitialRequests;
+}
+unsigned int ModelParameters::getBreederBunnyInitial() const {
+    return mBreederBunnyInitial;
+}
 
+unsigned int ModelParameters::getBreederBunnyTotalRequested() const {
+    return mBreederBunnyInitial + mBreederBunnyInitialRequests;
+}
+
+unsigned int ModelParameters::getBreederBunnyBuyTreshold() const {
+    return mBreederBunnyBuyTreshold;
+}
+
+unsigned int ModelParameters::getBreederBunnyBuyAmount() const {
+    return mBreederBunnyBuyAmount;
+}
+
+double ModelParameters::getBreederBunnyArrivalDelay() const {
+    return mBreederBunnyArrivalDelay;
+}
+
+
+double ModelParameters::getAdolescenceTime() const {
+    return mAdolescenceTime;
+}
+
+double ModelParameters::getFemaleBirthChance() const {
+    return mFemaleBirthChance;
+}
+
+double ModelParameters::getDieWhileAdolescenceChance() const {
+    return mDieWhileAdolescenceChance;
+}
+
+double ModelParameters::getNewBreederBunnyWait() const {
+    return mNewBreederBunnyWaitMin + Random() * (mNewBreederBunnyWaitMax - mNewBreederBunnyWaitMin);
+}
 
 
 
