@@ -5,12 +5,19 @@
 #ifndef IMS_BREEDERBUNNY_H
 #define IMS_BREEDERBUNNY_H
 
-#include "Parameters.h"
 #include "simlib.h"
+#include "ModelParameters.h"
+#include "ModelStores.h"
+#include "ModelFacilities.h"
 
 class BreederBunny : public Process {
     protected:
+        const ModelParameters &mParams;
+        ModelStores &mSto;
+        ModelFacilities &mFac;
+        bool mGateCloser = false;
     public:
+        BreederBunny(const ModelParameters &params, ModelStores &sto, ModelFacilities &Fac);
         void Behavior();
 };
 
